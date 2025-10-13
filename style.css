@@ -75,14 +75,15 @@ footer {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* centre les deux blocs */
   align-items: center;
+  gap: 3rem; /* espace entre le texte et l'image (ajuste selon tes goûts) */
   background: linear-gradient(to bottom, #1e1e1e, #444);
   color: white;
   padding: 4rem;
   min-height: 100vh;
-  border: 2px solid yellow; /* bordure pour visualiser le hero */
 }
+
 
 .hero-content {
   max-width: 600px;
