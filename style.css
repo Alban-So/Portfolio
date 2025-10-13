@@ -1,12 +1,12 @@
-
 /* Style du menu */
 nav {
-  position: fixed;         /* reste en haut quand on scrolle */
+  position: fixed;
   top: 0;
   width: 100%;
-  background-color: #2c3e50;
+  background-color: black;
   padding: 1rem 0;
-  z-index: 1000;           /* reste au-dessus du reste */
+  z-index: 1000;
+  border-bottom: 2px solid #007FFF; /* bordure pour visualiser le menu */
 }
 
 nav ul {
@@ -38,14 +38,15 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
-  scroll-behavior: smooth; /* défilement fluide automatique */
+  scroll-behavior: smooth;
 }
 
 header {
-  background-color: #2c3e50;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 4rem 1rem;
+  border: 2px solid red; /* bordure pour visualiser le header */
 }
 
 h1, h2 {
@@ -61,6 +62,7 @@ section {
   padding: 4rem 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px dashed #007FFF; /* bordure pour visualiser la section */
 }
 
 footer {
@@ -68,20 +70,23 @@ footer {
   padding: 1rem;
   background: #eee;
   margin-top: 2rem;
+  border: 2px solid green; /* bordure pour visualiser le footer */
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #1e1e1e, #444); /* dégradé sombre comme ton image */
+  background: linear-gradient(to bottom, #1e1e1e, #444);
   color: white;
   padding: 4rem;
   min-height: 100vh;
+  border: 2px solid yellow; /* bordure pour visualiser le hero */
 }
 
 .hero-content {
   max-width: 600px;
+  border: 1px solid orange; /* bordure pour visualiser le contenu */
 }
 
 .hero-content h1 {
@@ -125,4 +130,5 @@ footer {
 .hero-image img {
   max-width: 400px;
   height: auto;
+  border: 1px solid red; /* bordure pour visualiser l'image */
 }
