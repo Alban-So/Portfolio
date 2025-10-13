@@ -69,3 +69,60 @@ footer {
   background: #eee;
   margin-top: 2rem;
 }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #1e1e1e, #444); /* dégradé sombre comme ton image */
+  color: white;
+  padding: 4rem;
+  min-height: 100vh;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #4aa1f3; /* couleur accent */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.social-buttons a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.social-buttons a:hover {
+  background-color: white;
+  color: #1e1e1e;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #4aa1f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  height: auto;
+}
