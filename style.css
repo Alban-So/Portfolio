@@ -91,7 +91,7 @@ footer {
 
 .hero-content h2 {
   font-size: 2rem;
-  color: #4aa1f3; /* couleur accent */
+  color: #007FFF;
 }
 
 .hero-content p {
@@ -116,7 +116,7 @@ footer {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
-  background-color: #4aa1f3;
+  background-color: #007FFF;
   color: white;
   text-decoration: none;
   border-radius: 5px;
