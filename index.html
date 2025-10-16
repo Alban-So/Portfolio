@@ -53,6 +53,25 @@
       <p>Je m'appelle Alban Sonneville, étudiant en deuxième année de BUT Informatique à l’Université de Lille. Passionné par le développement logiciel et les nouvelles technologies, j’aime concevoir des projets concrets et apprendre de nouvelles méthodes pour améliorer mes compétences.</p>
     </section>
 
+    <section id="outils">
+      <h3 class="section-title">Outils & technologies</h3>
+      <div class="filters" role="tablist" aria-label="Filtres">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="langages">Langages</button>
+        <button class="filter-btn" data-filter="bdd">Base de données</button>
+        <button class="filter-btn" data-filter="outils">Outils</button>
+      </div>
+
+      <div class="outils-grid" id="outilsGrid">
+        <div class="outil" data-type="outils">IntelliJ IDEA</div>
+        <div class="outil" data-type="outils">VSCode</div>
+        <div class="outil" data-type="langages">Java</div>
+        <div class="outil" data-type="langages">JavaScript</div>
+        <div class="outil" data-type="bdd">PostgreSQL</div>
+        <div class="outil" data-type="bdd">psql</div>
+      </div>
+    </section>
+
     <section id="projets">
       <h3 class="section-title">Mes projets</h3>
       <div class="projets-grid" id="projectsGrid">
@@ -161,33 +180,14 @@
       </div>
     </section>
 
-    <section id="outils">
-      <h3 class="section-title">Outils & technologies</h3>
-      <div class="filters" role="tablist" aria-label="Filtres">
-        <button class="filter-btn active" data-filter="all">Tout</button>
-        <button class="filter-btn" data-filter="langages">Langages</button>
-        <button class="filter-btn" data-filter="bdd">Base de données</button>
-        <button class="filter-btn" data-filter="outils">Outils</button>
-      </div>
-
-      <div class="outils-grid" id="outilsGrid">
-        <div class="outil" data-type="outils">IntelliJ IDEA</div>
-        <div class="outil" data-type="outils">VSCode</div>
-        <div class="outil" data-type="langages">Java</div>
-        <div class="outil" data-type="langages">JavaScript</div>
-        <div class="outil" data-type="bdd">PostgreSQL</div>
-        <div class="outil" data-type="bdd">psql</div>
-      </div>
-    </section>
-
     <section id="cv" class="cv-embed">
         <h3 class="section-title">Mon CV</h3>
-        <iframe src="CV_Alban_Sonneville" width="100%" height="600px" style="border:none;">
+        
+        <iframe src="CV_Alban_Sonneville.pdf" width="100%" height="600px" style="border:  1px solid #e6e6e6; border-radius: 8px;">
           Ce navigateur ne supporte pas les iframes.
         </iframe>
         <div class="download-center"><a class="download-btn cta" href="CV_Alban_Sonneville.pdf" download>Télécharger le CV</a></div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -228,50 +228,77 @@
 
 
   <script>
-  // --- Lang dropdown ---
-  const langBtn = document.getElementById('langBtn');
-  const langDrop = document.getElementById('langDrop');
-  langBtn.addEventListener('click', function() {
-    langDrop.classList.toggle('open');
-    const list = document.getElementById('langList');
-    list.setAttribute('aria-hidden', langDrop.classList.contains('open') ? 'false' : 'true');
-  });
-  document.addEventListener('click', (e) => {
-    if (!langDrop.contains(e.target)) {
-      langDrop.classList.remove('open');
-      document.getElementById('langList').setAttribute('aria-hidden', 'true');
+document.addEventListener("DOMContentLoaded", () => {
+
+  // --- Sélecteur de langue (FR/ENG) ---
+  const langDrop = document.getElementById('langDrop') || document.getElementById('langDropEn');
+  const langBtn = document.getElementById('langBtn') || document.getElementById('langBtnEn');
+
+  if (langDrop && langBtn) {
+    langBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDrop.classList.toggle('open');
+      const list = langDrop.querySelector('.lang-list');
+      if (list) list.setAttribute('aria-hidden', !langDrop.classList.contains('open'));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!langDrop.contains(e.target)) {
+        langDrop.classList.remove('open');
+        const list = langDrop.querySelector('.lang-list');
+        if (list) list.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
+  // --- Thème clair/sombre avec sauvegarde locale ---
+  const themeToggle = document.getElementById('themeToggle') || document.getElementById('themeToggleEn');
+
+  function applyTheme(dark) {
+    if (dark) {
+      document.body.classList.add('dark-mode');
+      if (themeToggle) themeToggle.textContent = '☀️';
+    } else {
+      document.body.classList.remove('dark-mode');
+      if (themeToggle) themeToggle.textContent = '🌙';
     }
-  });
+    try { localStorage.setItem('darkMode', dark ? '1' : '0'); } catch (e) { /* ignore */ }
+  }
 
-  // --- Thème clair/sombre ---
-  const themeToggle = document.getElementById('themeToggle');
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-  });
+  const saved = (() => {
+    try { return localStorage.getItem('darkMode'); } catch(e) { return null; }
+  })();
+  applyTheme(saved === '1');
 
-  // --- Filtres Outils & technologies ---
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const nowDark = document.body.classList.contains('dark-mode');
+      applyTheme(!nowDark);
+    });
+  }
+
+  // --- Filtres Outils & Technologies ---
   const filterBtns = document.querySelectorAll('.filter-btn');
   const outils = document.querySelectorAll('.outil');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // bouton actif
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filtre = btn.dataset.filter;
+  if (filterBtns.length > 0 && outils.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filtre = btn.dataset.filter;
 
-      outils.forEach(o => {
-        if (filtre === 'all' || o.dataset.type === filtre) {
-          o.style.display = 'block';
-        } else {
-          o.style.display = 'none';
-        }
+        outils.forEach(o => {
+          if (filtre === 'all' || o.dataset.type === filtre) {
+            o.style.display = 'block';
+          } else {
+            o.style.display = 'none';
+          }
+        });
       });
     });
-  });
+  }
+});
 </script>
-
-
 </body>
 </html>
