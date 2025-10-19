@@ -63,22 +63,64 @@
       </div>
 
       <div class="outils-grid" id="outilsGrid">
-        <div class="outil" data-type="outils">IntelliJ IDEA</div>
-        <div class="outil" data-type="outils">VSCode</div>
-        <div class="outil" data-type="langages">Java</div>
-        <div class="outil" data-type="langages">JavaScript</div>
-        <div class="outil" data-type="bdd">PostgreSQL</div>
-        <div class="outil" data-type="bdd">psql</div>
+        <!-- Langages -->
+        <div class="outil" data-type="langages">
+          <img src="./img/icons/java.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+
+        <div class="outil" data-type="langages">
+          <img src="./img/icons/c.svg" alt="Langage C" />
+          <span>C</span>
+        </div>
+
+        <div class="outil" data-type="langages">
+          <img src="./img/icons/html5.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+
+        <div class="outil" data-type="langages">
+          <img src="./img/icons/css3.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+
+        <!-- Bases de données -->
+        <div class="outil" data-type="bdd">
+          <img src="./img/icons/postgresql.svg" alt="PostgreSQL" />
+          <span>PostgreSQL</span>
+        </div>
+
+        <div class="outil" data-type="bdd">
+          <img src="./img/icons/postgresql.svg" alt="psql" />
+          <span>psql</span>
+        </div>
+
+        <!-- Outils -->
+        <div class="outil" data-type="outils">
+          <img src="./img/icons/intellij.svg" alt="IntelliJ IDEA" />
+          <span>IntelliJ IDEA</span>
+        </div>
+
+        <div class="outil" data-type="outils">
+          <img src="./img/icons/vscode.svg" alt="VSCode" />
+          <span>VSCode</span>
+        </div>
+
+        <div class="outil" data-type="outils">
+          <img src="./img/icons/git.svg" alt="Git" />
+          <span>Git</span>
+        </div>
       </div>
     </section>
+
 
     <section id="projets">
       <h3 class="section-title">Mes projets</h3>
       <div class="projets-grid" id="projectsGrid">
-        <article class="card" data-category="all" aria-labelledby="proj-1-title">
+        <article class="card" data-category="all" aria-labelledby="site_AMD">
           <img src="./img/siteAMD6.svg" alt="Image du projet Site de covoiturage AMD" />
           <div class="card-content">
-            <h3 id="proj-1-title">Site de covoiturage AMD</h3>
+            <h3 id="site_AMD">Site de covoiturage AMD</h3>
             <p>
               Site de covoiturage fictif pour l'entreprise AMD, permettant aux employés de partager des trajets.</br></br>
               Avec une page d'accueil, une page de recherche de trajets, une page de connexion et une page d'aide avec un formulaire.
@@ -93,11 +135,11 @@
             <a href="https://github.com/Alban-So/Site_Covoiturage" target="_blank" rel="noopener">Code source</a>
           </div>
         </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-2-title">
+
+        <article class="card" data-category="all" aria-labelledby="appariement_hote_visiteur">
           <img src="./img/application_appariement.svg" alt="Image du projet Appariement hôte visiteur" />
           <div class="card-content">
-            <h3 id="proj-2-title">Appariement hôte visiteur</h3>
+            <h3 id="appariement_hote_visiteur">Appariement hôte visiteur</h3>
             <p>
               Application Java permettant de gérer l'appariement entre hôtes et visiteurs pour des événements.</br></br>
               Fonctionnalités : gestion des utilisateurs, appariement automatique basé sur les préférences.
@@ -111,74 +153,38 @@
             <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur" target="_blank" rel="noopener">Code source</a>
           </div>
         </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-3-title">
-          <img src="illustration.svg" alt="Projet 3 - image" />
+
+        <article class="card" data-category="all" aria-labelledby="bdd_societe_aide_domicile">
+          <img src="./img/BDD.svg" alt="BDD Société d'aide à domicile" />
           <div class="card-content">
-            <h3 id="proj-3-title">Projet 3</h3>
-            <p>Brève description du projet 3. Remplace ce texte par le vrai contenu.</p>
+            <h3 id="bdd_societe_aide_domicile">BDD société d’aide à domicile</h3>
+            <p>Base de données permettant la génération d’états (ou listes) pour afficher des informations telles que les factures, les contrats des salariés, la liste des interventions, etc.</br></br>
+              Elle permet également de remplir des formulaires pour consulter les informations relatives à divers éléments (clients, aides-soignants, matériel, etc.).</p>
             <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
+              <div class="langage">Access</div>
+              <div class="langage">BDD</div>
             </div>
-          </div>
-          <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
         </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-4-title">
-          <img src="illustration.svg" alt="Projet 4 - image" />
-          <div class="card-content">
-            <h3 id="proj-4-title">Projet 4</h3>
-            <p>Brève description du projet 4. Remplace ce texte par le vrai contenu.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
+        
+        <!-- Exemple Flash Card :
+
+          <article class="card" data-category="all" aria-labelledby="proj-1-title">
+            <img src="./img/illustration.svg" alt="Projet 1 - image" />
+            <div class="card-content">
+              <h3 id="proj-1-title">Projet 1</h3>
+              <p>Brève description du projet 1. Remplace texte.</p>
+              <div class="langages">
+                <div class="langage">Java</div>
+                <div class="langage">React</div>
+                <div class="langage">CSS</div>
+              </div>
             </div>
-          </div>
-          <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-5-title">
-          <img src="illustration.svg" alt="Projet 5 - image" />
-          <div class="card-content">
-            <h3 id="proj-5-title">Projet 5</h3>
-            <p>Brève description du projet 5. Remplace ce texte par le vrai contenu.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
+            <div class="card-footer">
+              <img src="./img/github_logo_blue.svg" alt="GitHub" />
+              <a href="lien" target="_blank" rel="noopener">Code source</a>
             </div>
-          </div>
-          <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-6-title">
-          <img src="illustration.svg" alt="Projet 6 - image" />
-          <div class="card-content">
-            <h3 id="proj-6-title">Projet 6</h3>
-            <p>Brève description du projet 6. Remplace ce texte par le vrai contenu.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
+          </article>
+        -->
     
       </div>
     </section>

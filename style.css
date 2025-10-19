@@ -104,7 +104,25 @@ section { margin-bottom: 1.5rem; background: #fff; padding: 1.25rem; border-radi
 .filter-btn.active { background: #0b5fff; color: #fff; border-color: transparent; }
 
 .outils-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; margin-top: 0.6rem; }
-.outil { background: #f8fafc; padding: 0.8rem; border-radius: 8px; text-align: center; font-weight: 700; }
+.outil {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  background: #f8fafc;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.outil img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
 
 /* CV */
 .cv-embed { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
