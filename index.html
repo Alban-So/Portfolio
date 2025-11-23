@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio - Alban Sonneville</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header" role="banner">
-    <div class="logo">Alban Sonneville</div>
-    <nav role="navigation" aria-label="Principal">
-      <a href="#home">Accueil</a>
-      <a href="#a-propos">À propos</a>
-      <a href="#projets">Projets</a>
-      <a href="#outils">Outils</a>
-      <a href="#cv">Mon CV</a>
-    </nav>
-
-    <div class="controls">
-      <div class="theme-toggle" id="themeToggle" title="Basculer thème">🌙</div>
-      <div class="lang-dropdown" id="langDrop">
-        <button class="lang-toggle" id="langBtn">FR ▾</button>
-        <div class="lang-list" id="langList" aria-hidden="true">
-          <button onclick="location.href='index.html'">FR</button>
-          <button onclick="location.href='eng/index.html'">ENG</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Alban Sonneville</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <header class="header">
+      <div class="logo">Alban Sonneville</div>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#cv">Mon parcours</a>
+        <a href="#outils">Outils & technologies</a>
+        <a href="#projets">Projets</a>
+      </nav>
+       <div class="lang-switch">
+        <a href="index.html" class="active">FR</a>
+        <span class="sep">|</span>
+        <a href="eng/index.html">ENG</a>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <section id="home" class="hero" aria-labelledby="intro-title">
+    <!-- Section Hero -->
+    <section class="hero container">
       <div class="hero-left">
         <div class="hero-content">
           <h1>Alban Sonneville</h1>
@@ -38,19 +32,21 @@
           <p>Passionné par le réseau, la programmation et plus largement les nouvelles technologies,<br>
             j’aime concevoir des projets concrets et développer sans cesse mes compétences techniques.</p>
           <div class="social-buttons">
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Alban-So" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank">LinkedIn</a>
           </div>
-          <a class="cta" href="#cv">Mon CV</a>
+          <a class="cta" href="./CV_Alban_Sonneville.pdf">Télécharger mon CV</a>
         </div>
       </div>
       <div class="hero-right">
-        <img src="./img/programmeur.png" alt="Illustration" style="max-width:100%; border-radius:10px;" />
+        <img src="./img/programmeur.png" alt="Illustration développeur" />
       </div>
     </section>
 
-    <section id="a-propos">
+    <!-- À propos -->
+    <section id="about" class="container">
       <h3 class="section-title">À propos de moi</h3>
+<<<<<<< HEAD
       <p>Je m'appelle Alban Sonneville, actuellement en deuxième année de BUT Informatique à l’Université de Lille.<br>
         Curieux et passionné par les nouvelles technologies, j’aime explorer les domaines du réseau et de la programmation. <br>
         Ce qui me motive avant tout, c’est de concevoir des projets concrets, d’expérimenter et d’apprendre en donnant vie à mes idées.<br> <br>
@@ -61,169 +57,139 @@
         Grâce à cet équilibre entre théorie et pratique, j’acquiers une vision globale du monde informatique, tout en développant des compétences techniques polyvalentes.<br>
         J’aime relever de nouveaux défis, découvrir de nouvelles technologies et progresser constamment. <br>
         Mon objectif est de construire une carrière dans l’informatique, en alliant curiosité, rigueur et créativité pour concevoir des solutions utiles et innovantes.</p>
+=======
+      <p>
+        Je m'appelle <strong>Alban Sonneville</strong>, actuellement en deuxième année de <strong>BUT Informatique</strong> à l’Université de Lille.  
+        Curieux et passionné par les nouvelles technologies, j’aime explorer les domaines du réseau et de la programmation.  
+        Ce qui me motive avant tout, c’est de concevoir des projets concrets, d’expérimenter et d’apprendre en donnant vie à mes idées.
+      </p>
+      <p>
+        Le BUT Informatique est pour moi une formation très enrichissante, qui m’apporte des bases solides en développement, administration système et gestion de projets.  
+        Grâce à cet équilibre entre théorie et pratique, j’acquiers une vision globale du monde informatique, tout en développant des compétences techniques polyvalentes.
+      </p>
+>>>>>>> e24072a (Rework CV)
     </section>
 
-    <section id="outils">
+    <!-- Parcours -->
+    <section id="cv" class="container">
+      <h3 class="section-title">Mon parcours</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2023 – Aujourd’hui</div>
+          <div class="timeline-content"><strong>BUT Informatique</strong> — Université de Lille</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021 – 2023</div>
+          <div class="timeline-content"><strong>Prépa intégrée</strong> — ISEN Lille</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Été 2023 et 2024</div>
+          <div class="timeline-content">Job d’été — Crédit Agricole Nord de France</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-content">Stage ouvrier — MEISER</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outils & technologies -->
+    <section id="outils" class="container">
       <h3 class="section-title">Outils & technologies</h3>
-      <div class="filters" role="tablist" aria-label="Filtres">
+      <div class="filters">
         <button class="filter-btn active" data-filter="all">Tout</button>
         <button class="filter-btn" data-filter="langages">Langages</button>
         <button class="filter-btn" data-filter="bdd">Base de données</button>
         <button class="filter-btn" data-filter="outils">Outils</button>
       </div>
-
       <div class="outils-grid" id="outilsGrid">
-        <!-- Langages -->
-        <div class="outil" data-type="langages">
-          <img src="./img/icons/java.svg" alt="Java" />
-          <span>Java</span>
-        </div>
-
-        <div class="outil" data-type="langages">
-          <img src="./img/icons/c.svg" alt="Langage C" />
-          <span>C</span>
-        </div>
-
-        <div class="outil" data-type="langages">
-          <img src="./img/icons/html5.svg" alt="HTML" />
-          <span>HTML</span>
-        </div>
-
-        <div class="outil" data-type="langages">
-          <img src="./img/icons/css3.svg" alt="CSS" />
-          <span>CSS</span>
-        </div>
-
-        <!-- Bases de données -->
-        <div class="outil" data-type="bdd">
-          <img src="./img/icons/postgresql.svg" alt="PostgreSQL" />
-          <span>PostgreSQL</span>
-        </div>
-
-        <div class="outil" data-type="bdd">
-          <img src="./img/icons/postgresql.svg" alt="psql" />
-          <span>psql</span>
-        </div>
-
-        <!-- Outils -->
-        <div class="outil" data-type="outils">
-          <img src="./img/icons/intellij.svg" alt="IntelliJ IDEA" />
-          <span>IntelliJ IDEA</span>
-        </div>
-
-        <div class="outil" data-type="outils">
-          <img src="./img/icons/vscode.svg" alt="VSCode" />
-          <span>VSCode</span>
-        </div>
-
-        <div class="outil" data-type="outils">
-          <img src="./img/icons/git.svg" alt="Git" />
-          <span>Git</span>
-        </div>
+        <div class="outil" data-type="langages"><img src="./img/icons/java.svg" alt="">Java</div>
+        <div class="outil" data-type="langages"><img src="./img/icons/c.svg" alt="">C</div>
+        <div class="outil" data-type="langages"><img src="./img/icons/html5.svg" alt="">HTML</div>
+        <div class="outil" data-type="langages"><img src="./img/icons/css3.svg" alt="">CSS</div>
+        <div class="outil" data-type="bdd"><img src="./img/icons/postgresql.svg" alt="">PostgreSQL</div>
+        <div class="outil" data-type="bdd"><img src="./img/icons/postgresql.svg" alt="">psql</div>
+        <div class="outil" data-type="outils"><img src="./img/icons/intellij.svg" alt="">IntelliJ IDEA</div>
+        <div class="outil" data-type="outils"><img src="./img/icons/vscode.svg" alt="">VSCode</div>
+        <div class="outil" data-type="outils"><img src="./img/icons/git.svg" alt="">Git</div>
       </div>
     </section>
 
-
-    <section id="projets">
-      <h3 class="section-title">Mes projets</h3>
-      <div class="projets-grid" id="projectsGrid">
-        <article class="card" data-category="all" aria-labelledby="site_AMD">
-          <img src="./img/siteAMD6.svg" alt="Image du projet Site de covoiturage AMD" />
+    <!-- Projets -->
+    <section id="projets" class="container">
+      <h3 class="section-title">Projets</h3>
+      <div class="projets-grid">
+        <div class="card">
+          <img src="./img/siteAMD6.svg" alt="Image du projet Site de covoiturage AMD">
           <div class="card-content">
-            <h3 id="site_AMD">Site de covoiturage AMD</h3>
+            <h3>Site de covoiturage AMD</h3>
             <p>
               Site de covoiturage fictif pour l'entreprise AMD, permettant aux employés de partager des trajets.</br></br>
-              Avec une page d'accueil, une page de recherche de trajets, une page de connexion et une page d'aide avec un formulaire.
+              Incluant une page d'accueil, une page de recherche de trajets, une page de connexion et une page d'aide avec un formulaire.
             </p>
-            <div class="langages">
-              <div class="langage">HTML</div>
-              <div class="langage">CSS</div>
-            </div>
+            <div class="langages"><span class="langage">HTML</span><span class="langage">CSS</span></div>
           </div>
           <div class="card-footer">
             <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So/Site_Covoiturage" target="_blank" rel="noopener">Code source</a>
+            <a href="https://github.com/Alban-So/Site_Covoiturage">Code source</a>
           </div>
-        </article>
+        </div>
 
-        <article class="card" data-category="all" aria-labelledby="appariement_hote_visiteur">
-          <img src="./img/application_appariement.svg" alt="Image du projet Appariement hôte visiteur" />
+        <div class="card">
+          <img src="./img/application_appariement.svg" alt="Image du projet Appariement hôte visiteur">
           <div class="card-content">
-            <h3 id="appariement_hote_visiteur">Appariement hôte visiteur</h3>
+            <h3>Appariement hôte visiteur</h3>
             <p>
               Application Java permettant de gérer l'appariement entre hôtes et visiteurs pour des événements.</br></br>
               Fonctionnalités : gestion des utilisateurs, appariement automatique basé sur les préférences.
             </p>
-            <div class="langages">
-              <div class="langage">Java</div>
-            </div>
+            <div class="langages"><span class="langage">Java</span></div>
           </div>
           <div class="card-footer">
             <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur" target="_blank" rel="noopener">Code source</a>
+            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur">Code source</a>
           </div>
-        </article>
+        </div>
 
-        <article class="card" data-category="all" aria-labelledby="bdd_societe_aide_domicile">
-          <img src="./img/BDD.svg" alt="BDD Société d'aide à domicile" />
+        <div class="card">
+          <img src="./img/BDD.svg" alt="Image BDD Société d'aide à domicile">
           <div class="card-content">
-            <h3 id="bdd_societe_aide_domicile">BDD société d’aide à domicile</h3>
+            <h3>Base de données Société d'aide à domicile</h3>
             <p>Base de données permettant la génération d’états (ou listes) pour afficher des informations telles que les factures, les contrats des salariés, la liste des interventions, etc.</br></br>
-              Elle permet également de remplir des formulaires pour consulter les informations relatives à divers éléments (clients, aides-soignants, matériel, etc.).</p>
+              Elle permet également de remplir des formulaires pour consulter les informations relatives à divers éléments (clients, aides-soignants, matériel, etc.).
+            </p>
             <div class="langages">
-              <div class="langage">Access</div>
-              <div class="langage">BDD</div>
+              <span class="langage">Access</span><span class="langage">BDD</span>
             </div>
-        </article>
-        
-        <!-- Exemple Flash Card :
-
-          <article class="card" data-category="all" aria-labelledby="proj-1-title">
-            <img src="./img/illustration.svg" alt="Projet 1 - image" />
-            <div class="card-content">
-              <h3 id="proj-1-title">Projet 1</h3>
-              <p>Brève description du projet 1. Remplace texte.</p>
-              <div class="langages">
-                <div class="langage">Java</div>
-                <div class="langage">React</div>
-                <div class="langage">CSS</div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <img src="./img/github_logo_blue.svg" alt="GitHub" />
-              <a href="lien" target="_blank" rel="noopener">Code source</a>
-            </div>
-          </article>
-        -->
-    
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="cv" class="cv-embed">
-        <h3 class="section-title">Mon CV</h3>
-        
-        <iframe src="CV_Alban_Sonneville.pdf" width="100%" height="600px" style="border:  1px solid #e6e6e6; border-radius: 8px;">
-          Ce navigateur ne supporte pas les iframes.
-        </iframe>
-        <div class="download-center"><a class="download-btn cta" href="CV_Alban_Sonneville.pdf" download>Télécharger le CV</a></div>
+    <!-- CV -->
+    <section id="cv" class="container">
+    <div class="download-center">
+        <a href="CV_Alban_Sonneville.pdf" class="cta" download>Télécharger mon CV</a>
+      </div>
     </section>
-  </main>
 
-  <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
     <div class="footer-top"></div>
       <div class="footer-content container">
         <div class="footer-section about">
           <h4>Alban Sonneville</h4>
-          <p>Développeur passionné par la création d’applications web, d’outils open-source et d’expériences numériques innovantes.</p>
+          <p>Passionné par le réseau, la programmation et plus largement les nouvelles technologies,<br>
+            j’aime concevoir des projets concrets et développer sans cesse mes compétences techniques.</p>
         </div>
 
         <div class="footer-section links">
           <h5>Liens rapides</h5>
           <ul>
             <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#outils">Compétences</a></li>
+            <li><a href="#cv">Mon Parcours</a></li>
+            <li><a href="#outils">Outils et technologies</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#cv">Mon CV</a></li>
           </ul>
         </div>
 
@@ -245,79 +211,37 @@
       </div>
   </footer>
 
+    <script src="script.js">
+      // --- Filtrage des outils ---
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const outils = document.querySelectorAll(".outil");
 
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
+      filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          // Retire la classe active de tous les boutons
+          filterButtons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
 
-  // --- Sélecteur de langue (FR/ENG) ---
-  const langDrop = document.getElementById('langDrop') || document.getElementById('langDropEn');
-  const langBtn = document.getElementById('langBtn') || document.getElementById('langBtnEn');
+          const filter = button.getAttribute("data-filter");
 
-  if (langDrop && langBtn) {
-    langBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langDrop.classList.toggle('open');
-      const list = langDrop.querySelector('.lang-list');
-      if (list) list.setAttribute('aria-hidden', !langDrop.classList.contains('open'));
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!langDrop.contains(e.target)) {
-        langDrop.classList.remove('open');
-        const list = langDrop.querySelector('.lang-list');
-        if (list) list.setAttribute('aria-hidden', 'true');
-      }
-    });
-  }
-
-  // --- Thème clair/sombre avec sauvegarde locale ---
-  const themeToggle = document.getElementById('themeToggle') || document.getElementById('themeToggleEn');
-
-  function applyTheme(dark) {
-    if (dark) {
-      document.body.classList.add('dark-mode');
-      if (themeToggle) themeToggle.textContent = '☀️';
-    } else {
-      document.body.classList.remove('dark-mode');
-      if (themeToggle) themeToggle.textContent = '🌙';
-    }
-    try { localStorage.setItem('darkMode', dark ? '1' : '0'); } catch (e) { /* ignore */ }
-  }
-
-  const saved = (() => {
-    try { return localStorage.getItem('darkMode'); } catch(e) { return null; }
-  })();
-  applyTheme(saved === '1');
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const nowDark = document.body.classList.contains('dark-mode');
-      applyTheme(!nowDark);
-    });
-  }
-
-  // --- Filtres Outils & Technologies ---
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const outils = document.querySelectorAll('.outil');
-
-  if (filterBtns.length > 0 && outils.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filtre = btn.dataset.filter;
-
-        outils.forEach(o => {
-          if (filtre === 'all' || o.dataset.type === filtre) {
-            o.style.display = 'block';
-          } else {
-            o.style.display = 'none';
-          }
+          outils.forEach(outil => {
+            if (filter === "all" || outil.getAttribute("data-type") === filter) {
+              outil.style.display = "flex";
+            } else {
+              outil.style.display = "none";
+            }
+          });
         });
       });
+<<<<<<< HEAD
     });
   }
 });
 </script>
 </body>
+=======
+
+    </script>
+  </body>
+>>>>>>> e24072a (Rework CV)
 </html>

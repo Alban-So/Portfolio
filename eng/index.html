@@ -1,208 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio - Alban Sonneville</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <header class="header" role="banner">
-    <div class="logo">Alban Sonneville</div>
-    <nav role="navigation" aria-label="Main">
-      <a href="../index.html#home">Home</a>
-      <a href="../index.html#a-propos">About</a>
-      <a href="../index.html#projets">Projects</a>
-      <a href="../index.html#outils">Tools</a>
-      <a href="../index.html#cv">My CV</a>
-    </nav>
-
-    <div class="controls">
-      <div class="theme-toggle" id="themeToggleEn" title="Toggle theme">🌙</div>
-      <div class="lang-dropdown" id="langDropEn">
-        <button class="lang-toggle" id="langBtnEn">ENG ▾</button>
-        <div class="lang-list" id="langListEn" aria-hidden="true">
-          <button onclick="location.href='../index.html'">FR</button>
-          <button onclick="location.href='index.html'">ENG</button>
-        </div>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Alban Sonneville</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <header class="header">
+      <div class="logo">Alban Sonneville</div>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#cv">Mon parcours</a>
+        <a href="#outils">Outils & technologies</a>
+        <a href="#projets">Projets</a>
+      </nav>
+       <div class="lang-switch">
+        <a href="../index.html" class="active">FR</a>
+        <span class="sep">|</span>
+        <a href="./index.html">ENG</a>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container">
-    <section id="home" class="hero" aria-labelledby="intro-title">
+    <!-- Section Hero -->
+    <section class="hero container">
       <div class="hero-left">
         <div class="hero-content">
           <h1>Alban Sonneville</h1>
-          <h2>Student - BUT Computer Science</h2>
-          <p>I develop personal and school projects and enjoy exploring new technologies.</p>
+          <h2>Étudiant en BUT Informatique</h2>
+          <p>Passionné par le réseau, la programmation et plus largement les nouvelles technologies,<br>
+            j’aime concevoir des projets concrets et développer sans cesse mes compétences techniques.</p>
           <div class="social-buttons">
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Alban-So" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank">LinkedIn</a>
           </div>
-          <a class="cta" href="../index.html#cv">My CV</a>
+          <a class="cta" href="./CV_Alban_Sonneville.pdf">Télécharger mon CV</a>
         </div>
       </div>
       <div class="hero-right">
-        <img src="../img/programmeur.png" alt="Illustration" style="max-width:100%; border-radius:10px;" />
+        <img src="./img/programmeur.png" alt="Illustration développeur" />
       </div>
     </section>
 
-    <section id="outils">
-      <h3 class="section-title">Tools & technologies</h3>
-      <div class="filters" role="tablist" aria-label="Filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="langages">Languages</button>
-        <button class="filter-btn" data-filter="bdd">Databases</button>
-        <button class="filter-btn" data-filter="outils">Tools</button>
-      </div>
-      
-      <section id="a-propos">
-        <h3 class="section-title">About me</h3>
-        <p>My name is Alban Sonneville, a second-year student in BUT Computer Science at the University of Lille. Passionate about software development and new technologies, I like building real projects and learning new methods to improve my skills.</p>
-      </section>
+    <!-- À propos -->
+    <section id="about" class="container">
+      <h3 class="section-title">À propos de moi</h3>
+      <p>
+        Je m'appelle <strong>Alban Sonneville</strong>, actuellement en deuxième année de <strong>BUT Informatique</strong> à l’Université de Lille.  
+        Curieux et passionné par les nouvelles technologies, j’aime explorer les domaines du réseau et de la programmation.  
+        Ce qui me motive avant tout, c’est de concevoir des projets concrets, d’expérimenter et d’apprendre en donnant vie à mes idées.
+      </p>
+      <p>
+        Le BUT Informatique est pour moi une formation très enrichissante, qui m’apporte des bases solides en développement, administration système et gestion de projets.  
+        Grâce à cet équilibre entre théorie et pratique, j’acquiers une vision globale du monde informatique, tout en développant des compétences techniques polyvalentes.
+      </p>
+    </section>
 
-      <div class="outils-grid">
-        <div class="outil" data-type="outils">IntelliJ IDEA</div>
-        <div class="outil" data-type="outils">VSCode</div>
-        <div class="outil" data-type="langages">Java</div>
-        <div class="outil" data-type="langages">JavaScript</div>
-        <div class="outil" data-type="bdd">PostgreSQL</div>
-        <div class="outil" data-type="bdd">psql</div>
+    <!-- Parcours -->
+    <section id="cv" class="container">
+      <h3 class="section-title">Mon parcours</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2023 – Aujourd’hui</div>
+          <div class="timeline-content"><strong>BUT Informatique</strong> — Université de Lille</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021 – 2023</div>
+          <div class="timeline-content"><strong>Prépa intégrée</strong> — ISEN Lille</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Été 2023 et 2024</div>
+          <div class="timeline-content">Job d’été — Crédit Agricole Nord de France</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-content">Stage ouvrier — MEISER</div>
+        </div>
       </div>
     </section>
 
-    <section id="projets">
-      <h3 class="section-title">My projects</h3>
+    <!-- Outils & technologies -->
+    <section id="outils" class="container">
+      <h3 class="section-title">Outils & technologies</h3>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="langages">Langages</button>
+        <button class="filter-btn" data-filter="bdd">Base de données</button>
+        <button class="filter-btn" data-filter="outils">Outils</button>
+      </div>
+      <div class="outils-grid" id="outilsGrid">
+        <div class="outil" data-type="langages"><img src="./img/icons/java.svg" alt="">Java</div>
+        <div class="outil" data-type="langages"><img src="./img/icons/c.svg" alt="">C</div>
+        <div class="outil" data-type="langages"><img src="./img/icons/html5.svg" alt="">HTML</div>
+        <div class="outil" data-type="langages"><img src="./img/icons/css3.svg" alt="">CSS</div>
+        <div class="outil" data-type="bdd"><img src="./img/icons/postgresql.svg" alt="">PostgreSQL</div>
+        <div class="outil" data-type="bdd"><img src="./img/icons/postgresql.svg" alt="">psql</div>
+        <div class="outil" data-type="outils"><img src="./img/icons/intellij.svg" alt="">IntelliJ IDEA</div>
+        <div class="outil" data-type="outils"><img src="./img/icons/vscode.svg" alt="">VSCode</div>
+        <div class="outil" data-type="outils"><img src="./img/icons/git.svg" alt="">Git</div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="container">
+      <h3 class="section-title">Projets</h3>
       <div class="projets-grid">
-        <article class="card" data-category="all" aria-labelledby="proj-en-1-title">
-          <img src="../illustration.svg" alt="Project 1 - image" />
+        <div class="card">
+          <img src="./img/siteAMD6.svg" alt="Image du projet Site de covoiturage AMD">
           <div class="card-content">
-            <h3 id="proj-en-1-title">Project 1</h3>
-            <p>Short description for project 1. Replace with real content.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
-            </div>
+            <h3>Site de covoiturage AMD</h3>
+            <p>
+              Site de covoiturage fictif pour l'entreprise AMD, permettant aux employés de partager des trajets.</br></br>
+              Incluant une page d'accueil, une page de recherche de trajets, une page de connexion et une page d'aide avec un formulaire.
+            </p>
+            <div class="langages"><span class="langage">HTML</span><span class="langage">CSS</span></div>
           </div>
           <div class="card-footer">
-            <img src="../github_logo.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
+            <img src="./img/github_logo_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So/Site_Covoiturage">Code source</a>
           </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-en-2-title">
-          <img src="../illustration.svg" alt="Project 2 - image" />
+        </div>
+
+        <div class="card">
+          <img src="./img/application_appariement.svg" alt="Image du projet Appariement hôte visiteur">
           <div class="card-content">
-            <h3 id="proj-en-2-title">Project 2</h3>
-            <p>Short description for project 2. Replace with real content.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
-            </div>
+            <h3>Appariement hôte visiteur</h3>
+            <p>
+              Application Java permettant de gérer l'appariement entre hôtes et visiteurs pour des événements.</br></br>
+              Fonctionnalités : gestion des utilisateurs, appariement automatique basé sur les préférences.
+            </p>
+            <div class="langages"><span class="langage">Java</span></div>
           </div>
           <div class="card-footer">
-            <img src="../github_logo.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
+            <img src="./img/github_logo_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur">Code source</a>
           </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-en-3-title">
-          <img src="../illustration.svg" alt="Project 3 - image" />
+        </div>
+
+        <div class="card">
+          <img src="./img/BDD.svg" alt="Image BDD Société d'aide à domicile">
           <div class="card-content">
-            <h3 id="proj-en-3-title">Project 3</h3>
-            <p>Short description for project 3. Replace with real content.</p>
+            <h3>Base de données Société d'aide à domicile</h3>
+            <p>Base de données permettant la génération d’états (ou listes) pour afficher des informations telles que les factures, les contrats des salariés, la liste des interventions, etc.</br></br>
+              Elle permet également de remplir des formulaires pour consulter les informations relatives à divers éléments (clients, aides-soignants, matériel, etc.).
+            </p>
             <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
+              <span class="langage">Access</span><span class="langage">BDD</span>
             </div>
           </div>
-          <div class="card-footer">
-            <img src="../github_logo.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-en-4-title">
-          <img src="../illustration.svg" alt="Project 4 - image" />
-          <div class="card-content">
-            <h3 id="proj-en-4-title">Project 4</h3>
-            <p>Short description for project 4. Replace with real content.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <img src="../github_logo.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-en-5-title">
-          <img src="../illustration.svg" alt="Project 5 - image" />
-          <div class="card-content">
-            <h3 id="proj-en-5-title">Project 5</h3>
-            <p>Short description for project 5. Replace with real content.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <img src="../github_logo.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
-    
-        <article class="card" data-category="all" aria-labelledby="proj-en-6-title">
-          <img src="../illustration.svg" alt="Project 6 - image" />
-          <div class="card-content">
-            <h3 id="proj-en-6-title">Project 6</h3>
-            <p>Short description for project 6. Replace with real content.</p>
-            <div class="langages">
-              <div class="langage">Java</div>
-              <div class="langage">React</div>
-              <div class="langage">CSS</div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <img src="../github_logo.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </article>
-    
+        </div>
       </div>
     </section>
 
-    <section id="cv" class="cv-embed">
-      <h3 class="section-title">My CV</h3>
-      <iframe src="../CV_Alban_Sonneville.pdf" title="Alban Sonneville CV"></iframe>
-      <div class="download-center"><a class="download-btn cta" href="../CV_Alban_Sonneville.pdf" download>Download CV</a></div>
+    <!-- CV -->
+    <section id="cv" class="container">
+    <div class="download-center">
+        <a href="CV_Alban_Sonneville.pdf" class="cta" download>Télécharger mon CV</a>
+      </div>
     </section>
 
-  </main>
-
-  <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
     <div class="footer-top"></div>
       <div class="footer-content container">
         <div class="footer-section about">
           <h4>Alban Sonneville</h4>
-          <p>Développeur passionné par la création d’applications web, d’outils open-source et d’expériences numériques innovantes.</p>
+          <p>Passionné par le réseau, la programmation et plus largement les nouvelles technologies,<br>
+            j’aime concevoir des projets concrets et développer sans cesse mes compétences techniques.</p>
         </div>
 
         <div class="footer-section links">
           <h5>Liens rapides</h5>
           <ul>
             <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#outils">Compétences</a></li>
+            <li><a href="#cv">Mon Parcours</a></li>
+            <li><a href="#outils">Outils et technologies</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#cv">Mon CV</a></li>
           </ul>
         </div>
 
@@ -210,10 +184,10 @@
           <h5>Réseaux</h5>
           <div class="social-icons">
             <a href="https://github.com/Alban-So" target="_blank" aria-label="GitHub">
-              <img src="github_logo.svg" alt="GitHub" />
+              <img src="./img/github_logo_blue.svg" alt="GitHub" />
             </a>
             <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank" aria-label="LinkedIn">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+              <img src="./img/linkedin.svg" alt="LinkedIn" />
             </a>
           </div>
         </div>
@@ -222,81 +196,31 @@
       <div class="footer-bottom">
         <p>© 2025 Alban Sonneville — Tous droits réservés.</p>
       </div>
-    </footer>
+  </footer>
 
+    <script src="script.js">
+      // --- Filtrage des outils ---
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const outils = document.querySelectorAll(".outil");
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+      filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          // Retire la classe active de tous les boutons
+          filterButtons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
 
-  // --- Sélecteur de langue (FR/ENG) ---
-  const langDrop = document.getElementById('langDrop') || document.getElementById('langDropEn');
-  const langBtn = document.getElementById('langBtn') || document.getElementById('langBtnEn');
+          const filter = button.getAttribute("data-filter");
 
-  if (langDrop && langBtn) {
-    langBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langDrop.classList.toggle('open');
-      const list = langDrop.querySelector('.lang-list');
-      if (list) list.setAttribute('aria-hidden', !langDrop.classList.contains('open'));
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!langDrop.contains(e.target)) {
-        langDrop.classList.remove('open');
-        const list = langDrop.querySelector('.lang-list');
-        if (list) list.setAttribute('aria-hidden', 'true');
-      }
-    });
-  }
-
-  // --- Thème clair/sombre avec sauvegarde locale ---
-  const themeToggle = document.getElementById('themeToggle') || document.getElementById('themeToggleEn');
-
-  function applyTheme(dark) {
-    if (dark) {
-      document.body.classList.add('dark-mode');
-      if (themeToggle) themeToggle.textContent = '☀️';
-    } else {
-      document.body.classList.remove('dark-mode');
-      if (themeToggle) themeToggle.textContent = '🌙';
-    }
-    try { localStorage.setItem('darkMode', dark ? '1' : '0'); } catch (e) { /* ignore */ }
-  }
-
-  const saved = (() => {
-    try { return localStorage.getItem('darkMode'); } catch(e) { return null; }
-  })();
-  applyTheme(saved === '1');
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const nowDark = document.body.classList.contains('dark-mode');
-      applyTheme(!nowDark);
-    });
-  }
-
-  // --- Filtres Outils & Technologies ---
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const outils = document.querySelectorAll('.outil');
-
-  if (filterBtns.length > 0 && outils.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filtre = btn.dataset.filter;
-
-        outils.forEach(o => {
-          if (filtre === 'all' || o.dataset.type === filtre) {
-            o.style.display = 'block';
-          } else {
-            o.style.display = 'none';
-          }
+          outils.forEach(outil => {
+            if (filter === "all" || outil.getAttribute("data-type") === filter) {
+              outil.style.display = "flex";
+            } else {
+              outil.style.display = "none";
+            }
+          });
         });
       });
-    });
-  }
-});
-</script>
-</body>
+
+    </script>
+  </body>
 </html>
