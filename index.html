@@ -117,8 +117,8 @@
             <div class="langages"><span class="langage">HTML</span><span class="langage">CSS</span></div>
           </div>
           <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So/Site_Covoiturage">Code source</a>
+            <img src="./img/github_logo_white_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So/Site_Covoiturage" target="_blank">Code source</a>
           </div>
         </div>
 
@@ -133,8 +133,8 @@
             <div class="langages"><span class="langage">Java</span></div>
           </div>
           <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur">Code source</a>
+            <img src="./img/github_logo_white_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur" target="_blank">Code source</a>
           </div>
         </div>
 
@@ -173,7 +173,7 @@
         <div class="footer-section links">
           <h5>Liens rapides</h5>
           <ul>
-            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#about">À propos</a></li>
             <li><a href="#cv">Mon Parcours</a></li>
             <li><a href="#outils">Outils et technologies</a></li>
             <li><a href="#projets">Projets</a></li>
@@ -198,28 +198,7 @@
       </div>
   </footer>
 
-    <script src="script.js">
-      // --- Filtrage des outils ---
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const outils = document.querySelectorAll(".outil");
+    <script src="scripts.js"></script>
 
-      filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          // Retire la classe active de tous les boutons
-          filterButtons.forEach(btn => btn.classList.remove("active"));
-          button.classList.add("active");
-
-          const filter = button.getAttribute("data-filter");
-
-          outils.forEach(outil => {
-            if (filter === "all" || outil.getAttribute("data-type") === filter) {
-              outil.style.display = "flex";
-            } else {
-              outil.style.display = "none";
-            }
-          });
-        });
-      });
-    </script>
   </body>
 </html>

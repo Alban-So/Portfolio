@@ -1,226 +1,222 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio – Alban Sonneville</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
+
   <body>
-    <!-- Barre de navigation -->
+    <!-- Navigation Bar -->
     <header class="header">
       <div class="logo">Alban Sonneville</div>
       <nav>
-        <a href="#about">À propos</a>
-        <a href="#cv">Mon parcours</a>
-        <a href="#outils">Outils & technologies</a>
-        <a href="#projets">Projets</a>
+        <a href="#about">About</a>
+        <a href="#cv">My Journey</a>
+        <a href="#tools">Tools & Technologies</a>
+        <a href="#projects">Projects</a>
       </nav>
-       <div class="lang-switch">
-        <a href="../index.html" class="active">FR</a>
+
+      <div class="lang-switch">
+        <a href="../index.html">FR</a>
         <span class="sep">|</span>
-        <a href="./index.html">ENG</a>
+        <a href="index.html" class="active">ENG</a>
       </div>
     </header>
 
-    <!-- Section Hero -->
+    <!-- Hero Section -->
     <section class="hero container">
       <div class="hero-left">
         <div class="hero-content">
           <h1>Alban Sonneville</h1>
-          <h2>Étudiant en BUT Informatique</h2>
-          <p>Passionné par le réseau, la programmation et plus largement les nouvelles technologies,<br>
-            j’aime concevoir des projets concrets et développer sans cesse mes compétences techniques.</p>
+          <h2>Computer Science Undergraduate</h2>
+          <p>
+            Passionate about networking, programming, and new technologies,<br>
+            I enjoy building real-world projects and constantly developing my technical skills.
+          </p>
+
           <div class="social-buttons">
             <a href="https://github.com/Alban-So" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank">LinkedIn</a>
           </div>
-          <a class="cta" href="./CV_Alban_Sonneville.pdf">Télécharger mon CV</a>
+
+          <a class="cta" href="../CV_Alban_Sonneville.pdf">Download my Resume</a>
         </div>
       </div>
+
       <div class="hero-right">
-        <img src="./img/programmeur.png" alt="Illustration développeur" />
+        <img src="../img/programmeur.png" alt="Developer Illustration" />
       </div>
     </section>
 
-    <!-- À propos -->
+    <!-- About Section -->
     <section id="about" class="container">
-      <h3 class="section-title">À propos de moi</h3>
+      <h3 class="section-title">About Me</h3>
+
       <p>
-        Je m'appelle <strong>Alban Sonneville</strong>, actuellement en deuxième année de <strong>BUT Informatique</strong> à l’Université de Lille.  
-        Curieux et passionné par les nouvelles technologies, j’aime explorer les domaines du réseau et de la programmation.  
-        Ce qui me motive avant tout, c’est de concevoir des projets concrets, d’expérimenter et d’apprendre en donnant vie à mes idées.
+        My name is <strong>Alban Sonneville</strong>, and I am currently in my second year of a
+        <strong>BUT Computer Science</strong> degree at the University of Lille.  
+        Curious and passionate about new technologies, I love exploring networking and programming fields.  
+        What motivates me the most is creating real projects, experimenting, and learning by bringing my ideas to life.
       </p>
+
       <p>
-        Le BUT Informatique est pour moi une formation très enrichissante, qui m’apporte des bases solides en développement, administration système et gestion de projets.  
-        Grâce à cet équilibre entre théorie et pratique, j’acquiers une vision globale du monde informatique, tout en développant des compétences techniques polyvalentes.
+        The BUT Computer Science program is a highly enriching experience that provides me with strong fundamentals in development, system administration, and project management.  
+        Thanks to the balance between theory and practice, I gain a global view of the IT world while developing versatile technical skills.
       </p>
     </section>
 
-    <!-- Parcours -->
+    <!-- Timeline / Journey -->
     <section id="cv" class="container">
-      <h3 class="section-title">Mon parcours</h3>
+      <h3 class="section-title">My Journey</h3>
+
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-year">2023 – Aujourd’hui</div>
-          <div class="timeline-content"><strong>BUT Informatique</strong> — Université de Lille</div>
+          <div class="timeline-year">2023 – Present</div>
+          <div class="timeline-content"><strong>BUT Computer Science</strong> — University of Lille</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-year">2021 – 2023</div>
-          <div class="timeline-content"><strong>Prépa intégrée</strong> — ISEN Lille</div>
+          <div class="timeline-content"><strong>Preparatory Engineering Program</strong> — ISEN Lille</div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-year">Été 2023 et 2024</div>
-          <div class="timeline-content">Job d’été — Crédit Agricole Nord de France</div>
+          <div class="timeline-year">Summer 2023 & 2024</div>
+          <div class="timeline-content">Summer Job — Crédit Agricole Nord de France</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-year">2023</div>
-          <div class="timeline-content">Stage ouvrier — MEISER</div>
+          <div class="timeline-content">Worker Internship — MEISER</div>
         </div>
       </div>
     </section>
 
-    <!-- Outils & technologies -->
+    <!-- Tools & Technologies -->
     <section id="outils" class="container">
-      <h3 class="section-title">Outils & technologies</h3>
+      <h3 class="section-title">Tools & Technologies</h3>
       <div class="filters">
-        <button class="filter-btn active" data-filter="all">Tout</button>
-        <button class="filter-btn" data-filter="langages">Langages</button>
-        <button class="filter-btn" data-filter="bdd">Base de données</button>
-        <button class="filter-btn" data-filter="outils">Outils</button>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="langages">Languages</button>
+        <button class="filter-btn" data-filter="bdd">Databases</button>
+        <button class="filter-btn" data-filter="outils">Tools</button>
       </div>
       <div class="outils-grid" id="outilsGrid">
-        <div class="outil" data-type="langages"><img src="./img/icons/java.svg" alt="">Java</div>
-        <div class="outil" data-type="langages"><img src="./img/icons/c.svg" alt="">C</div>
-        <div class="outil" data-type="langages"><img src="./img/icons/html5.svg" alt="">HTML</div>
-        <div class="outil" data-type="langages"><img src="./img/icons/css3.svg" alt="">CSS</div>
-        <div class="outil" data-type="bdd"><img src="./img/icons/postgresql.svg" alt="">PostgreSQL</div>
-        <div class="outil" data-type="bdd"><img src="./img/icons/postgresql.svg" alt="">psql</div>
-        <div class="outil" data-type="outils"><img src="./img/icons/intellij.svg" alt="">IntelliJ IDEA</div>
-        <div class="outil" data-type="outils"><img src="./img/icons/vscode.svg" alt="">VSCode</div>
-        <div class="outil" data-type="outils"><img src="./img/icons/git.svg" alt="">Git</div>
+        <div class="outil" data-type="langages"><img src="../img/icons/java.svg" alt="">Java</div>
+        <div class="outil" data-type="langages"><img src="../img/icons/c.svg" alt="">C</div>
+        <div class="outil" data-type="langages"><img src="../img/icons/html5.svg" alt="">HTML</div>
+        <div class="outil" data-type="langages"><img src="../img/icons/css3.svg" alt="">CSS</div>
+        <div class="outil" data-type="bdd"><img src="../img/icons/postgresql.svg" alt="">PostgreSQL</div>
+        <div class="outil" data-type="bdd"><img src="../img/icons/postgresql.svg" alt="">psql</div>
+        <div class="outil" data-type="outils"><img src="../img/icons/intellij.svg" alt="">IntelliJ IDEA</div>
+        <div class="outil" data-type="outils"><img src="../img/icons/vscode.svg" alt="">VSCode</div>
+        <div class="outil" data-type="outils"><img src="../img/icons/git.svg" alt="">Git</div>
       </div>
     </section>
 
-    <!-- Projets -->
-    <section id="projets" class="container">
-      <h3 class="section-title">Projets</h3>
+    <!-- Projects -->
+    <section id="projects" class="container">
+      <h3 class="section-title">Projects</h3>
+
       <div class="projets-grid">
         <div class="card">
-          <img src="./img/siteAMD6.svg" alt="Image du projet Site de covoiturage AMD">
+          <img src="../img/siteAMD6.svg" alt="Carpooling Website AMD">
           <div class="card-content">
-            <h3>Site de covoiturage AMD</h3>
+            <h3>AMD Carpooling Website</h3>
             <p>
-              Site de covoiturage fictif pour l'entreprise AMD, permettant aux employés de partager des trajets.</br></br>
-              Incluant une page d'accueil, une page de recherche de trajets, une page de connexion et une page d'aide avec un formulaire.
+              Fictional carpooling website for AMD employees, allowing them to share rides.</br></br>
+              Includes a homepage, ride search page, login page, and a help page with a form.
             </p>
             <div class="langages"><span class="langage">HTML</span><span class="langage">CSS</span></div>
           </div>
           <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So/Site_Covoiturage">Code source</a>
+            <img src="../img/github_logo_white_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So/Site_Covoiturage" target="_blank">Source Code</a>
           </div>
         </div>
 
         <div class="card">
-          <img src="./img/application_appariement.svg" alt="Image du projet Appariement hôte visiteur">
+          <img src="../img/application_appariement.svg" alt="Host Visitor Matching App">
           <div class="card-content">
-            <h3>Appariement hôte visiteur</h3>
+            <h3>Host Visitor Matching Application</h3>
             <p>
-              Application Java permettant de gérer l'appariement entre hôtes et visiteurs pour des événements.</br></br>
-              Fonctionnalités : gestion des utilisateurs, appariement automatique basé sur les préférences.
+              Java application designed to manage host/visitor matching for events.</br></br>
+              Features: user management, automatic matching based on preferences.
             </p>
             <div class="langages"><span class="langage">Java</span></div>
           </div>
           <div class="card-footer">
-            <img src="./img/github_logo_blue.svg" alt="GitHub" />
-            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur">Code source</a>
+            <img src="../img/github_logo_white_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So/Appariement_Hote_Visiteur" target="_blank">Source Code</a>
           </div>
         </div>
 
         <div class="card">
-          <img src="./img/BDD.svg" alt="Image BDD Société d'aide à domicile">
+          <img src="../img/BDD.svg" alt="Home Assistance Company Database">
           <div class="card-content">
-            <h3>Base de données Société d'aide à domicile</h3>
-            <p>Base de données permettant la génération d’états (ou listes) pour afficher des informations telles que les factures, les contrats des salariés, la liste des interventions, etc.</br></br>
-              Elle permet également de remplir des formulaires pour consulter les informations relatives à divers éléments (clients, aides-soignants, matériel, etc.).
+            <h3>Home Assistance Company Database</h3>
+            <p>
+              Database used to generate reports such as invoices, employee contracts,
+              intervention lists, etc.</br></br>
+              It also allows filling forms to view information about clients,
+              caregivers, equipment, and more.
             </p>
             <div class="langages">
-              <span class="langage">Access</span><span class="langage">BDD</span>
+              <span class="langage">Access</span><span class="langage">Database</span>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- CV -->
+    <!-- Download Resume -->
     <section id="cv" class="container">
-    <div class="download-center">
-        <a href="CV_Alban_Sonneville.pdf" class="cta" download>Télécharger mon CV</a>
+      <div class="download-center">
+        <a href="../CV_Alban_Sonneville.pdf" class="cta" download>Download my Resume</a>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-    <div class="footer-top"></div>
+      <div class="footer-top"></div>
+
       <div class="footer-content container">
         <div class="footer-section about">
           <h4>Alban Sonneville</h4>
-          <p>Passionné par le réseau, la programmation et plus largement les nouvelles technologies,<br>
-            j’aime concevoir des projets concrets et développer sans cesse mes compétences techniques.</p>
+          <p>
+            Passionate about networking, programming, and new technologies,<br>
+            I enjoy building real projects and continuously developing my technical skills.
+          </p>
         </div>
 
         <div class="footer-section links">
-          <h5>Liens rapides</h5>
+          <h5>Quick Links</h5>
           <ul>
-            <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#cv">Mon Parcours</a></li>
-            <li><a href="#outils">Outils et technologies</a></li>
-            <li><a href="#projets">Projets</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cv">My Journey</a></li>
+            <li><a href="#tools">Tools & Technologies</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </div>
 
         <div class="footer-section social">
-          <h5>Réseaux</h5>
+          <h5>Socials</h5>
           <div class="social-icons">
-            <a href="https://github.com/Alban-So" target="_blank" aria-label="GitHub">
-              <img src="./img/github_logo_blue.svg" alt="GitHub" />
+            <a href="https://github.com/Alban-So" target="_blank">
+              <img src="../img/github_logo_blue.svg" alt="GitHub" />
             </a>
-            <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank" aria-label="LinkedIn">
-              <img src="./img/linkedin.svg" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/alban-sonneville/" target="_blank">
+              <img src="../img/linkedin.svg" alt="LinkedIn" />
             </a>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 Alban Sonneville — Tous droits réservés.</p>
+        <p>© 2025 Alban Sonneville — All rights reserved.</p>
       </div>
-  </footer>
+    </footer>
 
-    <script src="script.js">
-      // --- Filtrage des outils ---
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const outils = document.querySelectorAll(".outil");
-
-      filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          // Retire la classe active de tous les boutons
-          filterButtons.forEach(btn => btn.classList.remove("active"));
-          button.classList.add("active");
-
-          const filter = button.getAttribute("data-filter");
-
-          outils.forEach(outil => {
-            if (filter === "all" || outil.getAttribute("data-type") === filter) {
-              outil.style.display = "flex";
-            } else {
-              outil.style.display = "none";
-            }
-          });
-        });
-      });
-
-    </script>
+    <script src="../script.js"></script>
   </body>
 </html>
