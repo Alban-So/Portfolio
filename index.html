@@ -283,16 +283,29 @@
           </div>
           <div class="card-content">
             <h3>Déploiement SaaS Dolibarr</h3>
-            <p>Automatisation du déploiement de plusieurs instances de Dolibarr en mode SaaS. Mise en place de scripts Bash pour la création, la configuration et la suppression d'environnements clients.</p>
+            <p>Outil CLI en Bash pour déployer et administrer une infrastructure SaaS multi-clients basée sur Dolibarr, avec conteneurs Docker, reverse proxy Traefik et base PostgreSQL.</p>
             <dl class="project-details">
-              <dt>Fonctionnalités</dt>
-              <dd>Gestion des utilisateurs, déploiement de conteneurs, configuration automatique et scripts d'administration système.</dd>
+              <dt>Mon Rôle</dt>
+              <dd>Développement des scripts d'initialisation, de création et suppression de clients, gestion des tunnels SSH, configuration du reverse proxy Traefik et sauvegarde automatique des bases via rsync. Réalisé en binôme avec Clément Roty.</dd>
+              <dt>Résultats</dt>
+              <dd>CLI <code>dolib-saas</code> fonctionnel avec commandes <em>init</em>, <em>createuser</em>, <em>deleteuser</em>, <em>show</em>, <em>start</em> et <em>down</em>. Chaque client dispose d'une instance Dolibarr isolée, accessible via une URL dédiée (nomclient.machine.iutinfo.fr). Documentation man-page incluse.</dd>
+              <dt>Retours</dt>
+              <dd>Ce projet m'a appris à concevoir une infrastructure réseau complète et sécurisée. J'ai compris l'importance du cloisonnement entre services et de l'automatisation pour fiabiliser les déploiements répétitifs.</dd>
             </dl>
             <div class="langages">
               <span class="langage">Bash</span>
               <span class="langage">Linux</span>
-              <span class="langage">DevOps</span>
+              <span class="langage">Docker</span>
+              <span class="langage">Traefik</span>
+              <span class="langage">PostgreSQL</span>
+              <span class="langage">SSH</span>
+              <span class="langage">Réseau</span>
+              <span class="langage">Travail en équipe</span>
             </div>
+          </div>
+          <div class="card-footer">
+            <img src="./img/github_logo_white_blue.svg" alt="GitLab" />
+            <a href="https://gitlab.univ-lille.fr/etu/2025-2026/s4b.01/sonneville-roty" target="_blank">Code source</a>
           </div>
         </div>
 
